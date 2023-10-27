@@ -22,7 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -51,25 +51,81 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header id="navbar">
+    <header id="navbar" itemscope itemtype="http://schema.org/WebPage">
       <div class="container">
         <a href="./"
           ><img
             src="./images/thai-chin-logo.png"
             alt="Thai Chin - Thai Chinese Restaurant"
             class="logo"
+            itemprop="image"
         /></a>
-        <nav class="primary-navigation" id="primary-navigation" aria-label="">
-          <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./location.html">Location</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+        <nav
+          class="primary-navigation"
+          id="primary-navigation"
+          aria-label=""
+          itemprop="potentialAction"
+          itemscope
+          itemtype="http://schema.org/Action"
+        >
+          <ul
+            itemprop="actionStatus"
+            itemscope
+            itemtype="http://schema.org/PotentialActionStatus"
+          >
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./" itemprop="url"><span itemprop="name">Home</span></a>
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./menu.html" itemprop="url"
+                ><span itemprop="name">Menu</span></a
+              >
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./about.html" itemprop="url"
+                ><span itemprop="name">About</span></a
+              >
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./location.html" itemprop="url"
+                ><span itemprop="name">Location</span></a
+              >
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./contact.html" itemprop="url"
+                ><span itemprop="name">Contact</span></a
+              >
+            </li>
           </ul>
         </nav>
-        <button class="primary-button">
+        <button
+          class="primary-button"
+          itemprop="potentialAction"
+          itemscope
+          itemtype="http://schema.org/Action"
+        >
           <span
+            itemprop="name"
             data-glf-cuid="48daaf2c-04f8-48ba-9a60-48e638560b45"
             data-glf-ruid="a0f60af0-961c-4dc6-869a-6e562df52876"
             >See MENU & Order</span
@@ -80,23 +136,24 @@
         </div>
       </div>
     </header>
-    <main>
+
+    <main itemscope itemtype="http://schema.org/Restaurant">
       <section class="hero">
         <div class="container">
-          <h1>About Us</h1>
+          <h1 itemprop="name">About Us</h1>
         </div>
       </section>
       <section>
         <div class="container">
-          <h2>Our Story and Mission</h2>
-          <h3>The Birth of Thai Chin</h3>
-          <p>
+          <h2 itemprop="description">Our Story and Mission</h2>
+          <h3 itemprop="about">The Birth of Thai Chin</h3>
+          <p itemprop="description">
             Discover the origins of Thai Chin, where our culinary journey began.
             Learn how a simple vision transformed into a culinary haven in the
             heart of Karachi.
           </p>
-          <h3>A Passion for Authenticity</h3>
-          <p>
+          <h3 itemprop="about">A Passion for Authenticity</h3>
+          <p itemprop="description">
             Explore our unwavering dedication to authenticity. From the choice
             of ingredients to the cooking techniques, we leave no stone unturned
             in bringing the true flavors of China to Karachi.
@@ -105,15 +162,15 @@
       </section>
       <section>
         <div class="container">
-          <h2>Culinary Craftsmanship</h2>
-          <h3>Meet Our Culinary Maestros</h3>
-          <p>
+          <h2 itemprop="description">Culinary Craftsmanship</h2>
+          <h3 itemprop="about">Meet Our Culinary Maestros</h3>
+          <p itemprop="description">
             Get to know the talented chefs behind Thai Chin's exquisite dishes.
             These masters of the wok bring years of expertise and a deep love
             for Chinese cuisine to your table.
           </p>
-          <h3>From Tradition to Your Plate</h3>
-          <p>
+          <h3 itemprop="about">From Tradition to Your Plate</h3>
+          <p itemprop="description">
             Understand the art of crafting each dish. We delve into the
             traditional recipes and cooking methods that make our food an
             embodiment of Chinese culinary traditions.
@@ -122,15 +179,15 @@
       </section>
       <section>
         <div class="container">
-          <h2>Community and Quality</h2>
-          <h3>A Part of Karachi's Culinary Fabric</h3>
-          <p>
+          <h2 itemprop="description">Community and Quality</h2>
+          <h3 itemprop="about">A Part of Karachi's Culinary Fabric</h3>
+          <p itemprop="description">
             Learn how Thai Chin has become an integral part of Karachi's
             culinary scene, with a commitment to quality that has made us a
             beloved dining destination.
           </p>
-          <h3>Our Local Roots</h3>
-          <p>
+          <h3 itemprop="about">Our Local Roots</h3>
+          <p itemprop="description">
             Discover our connection to the local community and our dedication to
             serving the people of Karachi with the finest Chinese cuisine
             available.
@@ -139,15 +196,15 @@
       </section>
       <section>
         <div class="container">
-          <h2>Your Culinary Adventure</h2>
-          <h3>Celebrating Moments</h3>
-          <p>
+          <h2 itemprop="description">Your Culinary Adventure</h2>
+          <h3 itemprop="about">Celebrating Moments</h3>
+          <p itemprop="description">
             Find out how Thai Chin goes beyond providing meals. We create
             unforgettable dining experiences, making every visit to our
             restaurant a celebration of taste.
           </p>
-          <h3>Connect with Us</h3>
-          <p>
+          <h3 itemprop="about">Connect with Us</h3>
+          <p itemprop="description">
             Reach out to us with your questions, feedback, or reservations.
             We're always here to make your Thai Chin experience exceptional.
             Contact us at [your contact information].
@@ -165,14 +222,14 @@
       </section>
       <section>
         <div class="container">
-          <h2>Join Our Journey</h2>
-          <h3>Be Part of the Story</h3>
-          <p>
+          <h2 itemprop="description">Join Our Journey</h2>
+          <h3 itemprop="about">Be Part of the Story</h3>
+          <p itemprop="description">
             Become a part of our ongoing culinary adventure. At Thai Chin, every
             dish tells a story, and your presence in our restaurant is a new
             chapter waiting to be written.
           </p>
-          <p>
+          <p itemprop="description">
             Experience the essence of China with every visit to Thai Chin. Our
             story continues with each satisfied guest, and we look forward to
             sharing it with you.
@@ -180,7 +237,8 @@
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer itemscope itemtype="http://schema.org/Restaurant">
       <div class="container">
         <div>
           <a href="./"
@@ -189,40 +247,52 @@
               alt="Thai Chin - Thai Chinese Restaurant"
               class="logo"
             />
-            <p>Thai Chin Restaurant, Karachi</p>
+            <p itemprop="name">Thai Chin Restaurant, Karachi</p>
           </a>
         </div>
         <div>
-          <p style="font-size: 12px; line-height: 22px">
-            Thai Chin Karachi, a new Chinese restaurant in Gulzar E Hijri Scheme
-            33, offers a wide variety of authentic dishes to take out or enjoy
-            in-house. Whether you're a fan of classic Chinese dishes like fried
-            rice and noodles, or you're looking for something more adventurous,
-            Thai Chin Karachi has something for everyone.
+          <p style="font-size: 12px; line-height: 22px" itemprop="description">
+            Discover the flavors of Thai Chin Karachi, a leading Chinese
+            restaurant in Gulzar E Hijri Scheme 33. We offer a diverse selection
+            of authentic dishes for dine-in or takeout. Whether you crave
+            traditional Chinese favorites like fried rice and noodles or seek
+            adventurous culinary experiences, Thai Chin Karachi caters to all
+            tastes.
           </p>
         </div>
-        <div>
-          <a href=""
+        <div
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          <a href="https://goo.gl/maps/qGAA5FSNPWPypkVV9"
             ><p>
               Shop# B-59 Ground Floor,<br />
               Arif Arcade, Sector No: 38-A,<br />
-              KDA Scheme 33 Karachi
+              <span itemprop="addressLocality">Karachi</span>,
+              <span itemprop="addressRegion">Sindh</span>
             </p></a
           >
-          <a href="tel:+923041363224">0304 1363224</a>
+          <a href="tel:+923041363224" itemprop="telephone"
+            >Call Us: 0304 1363224</a
+          >
         </div>
         <div>
-          <button class="primary-button">
-            <span
-              data-glf-cuid="48daaf2c-04f8-48ba-9a60-48e638560b45"
-              data-glf-ruid="a0f60af0-961c-4dc6-869a-6e562df52876"
-              >See MENU & Order</span
-            >
-          </button>
+          <a href="menu.html">
+            <button class="primary-button">
+              <span>Explore Our Menu</span>
+            </button>
+          </a>
           <div class="social-icon">
-            <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
-            <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="https://www.facebook.com/thaichinone"
+              ><i class="fa-brands fa-facebook fa-xl"></i
+            ></a>
+            <a href="https://www.instagram.com/thaichinone"
+              ><i class="fa-brands fa-instagram fa-xl"></i
+            ></a>
+            <a href="https://api.whatsapp.com/send?phone=%2B923041363224"
+              ><i class="fa-brands fa-whatsapp fa-xl"></i
+            ></a>
           </div>
         </div>
       </div>

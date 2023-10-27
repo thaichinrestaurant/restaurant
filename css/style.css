@@ -52,6 +52,10 @@ a:hover {
   color: var(--text-color);
 }
 
+.primary-navigation a.active {
+  font-size: 40px;
+}
+
 .cta {
   display: flex;
   gap: 10px;

@@ -22,7 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -51,25 +51,81 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header id="navbar">
+    <header id="navbar" itemscope itemtype="http://schema.org/WebPage">
       <div class="container">
         <a href="./"
           ><img
             src="./images/thai-chin-logo.png"
             alt="Thai Chin - Thai Chinese Restaurant"
             class="logo"
+            itemprop="image"
         /></a>
-        <nav class="primary-navigation" id="primary-navigation" aria-label="">
-          <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./location.html">Location</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+        <nav
+          class="primary-navigation"
+          id="primary-navigation"
+          aria-label=""
+          itemprop="potentialAction"
+          itemscope
+          itemtype="http://schema.org/Action"
+        >
+          <ul
+            itemprop="actionStatus"
+            itemscope
+            itemtype="http://schema.org/PotentialActionStatus"
+          >
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./" itemprop="url"><span itemprop="name">Home</span></a>
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./menu.html" itemprop="url"
+                ><span itemprop="name">Menu</span></a
+              >
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./about.html" itemprop="url"
+                ><span itemprop="name">About</span></a
+              >
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./location.html" itemprop="url"
+                ><span itemprop="name">Location</span></a
+              >
+            </li>
+            <li
+              itemprop="target"
+              itemscope
+              itemtype="http://schema.org/EntryPoint"
+            >
+              <a href="./contact.html" itemprop="url"
+                ><span itemprop="name">Contact</span></a
+              >
+            </li>
           </ul>
         </nav>
-        <button class="primary-button">
+        <button
+          class="primary-button"
+          itemprop="potentialAction"
+          itemscope
+          itemtype="http://schema.org/Action"
+        >
           <span
+            itemprop="name"
             data-glf-cuid="48daaf2c-04f8-48ba-9a60-48e638560b45"
             data-glf-ruid="a0f60af0-961c-4dc6-869a-6e562df52876"
             >See MENU & Order</span
@@ -80,28 +136,37 @@
         </div>
       </div>
     </header>
-    <main>
+
+    <main itemscope itemtype="http://schema.org/Restaurant">
       <section class="hero">
         <div class="container">
-          <h1>Our Location</h1>
+          <h1 itemprop="name">Our Location</h1>
         </div>
       </section>
       <section>
         <div class="container">
-          <h2>Visit Us in Scheme 33, Gulzar-e-Hijri, Karachi</h2>
+          <h2 itemprop="description">
+            Visit Us in Scheme 33, Gulzar-e-Hijri, Karachi
+          </h2>
           <h3>Address</h3>
-          <p>
-            Thai Chin Restaurant<br />
-            Shop# B-59 Ground Floor,<br />
-            Arif Arcade, Sector No: 38-A,<br />
-            Scheme 33, Gulzar-e-Hijri<br />
-            Karachi, Pakistan
+          <p
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <span itemprop="name">Thai Chin Restaurant</span><br />
+            <span itemprop="streetAddress"
+              >Shop# B-59 Ground Floor, Arif Arcade, Sector No: 38-A</span
+            ><br />
+            <span itemprop="addressLocality">Karachi</span>,
+            <span itemprop="addressRegion">Sindh</span>,
+            <span itemprop="addressCountry">Pakistan</span>
           </p>
         </div>
       </section>
       <section>
         <div class="container">
-          <h2>Get Directions</h2>
+          <h2 itemprop="description">Get Directions</h2>
           <p>
             We've made it easy for you to find your way to Thai Chin. Simply use
             the interactive map below to get precise directions to our
@@ -120,7 +185,7 @@
       </section>
       <section>
         <div class="container">
-          <h2>Parking</h2>
+          <h2 itemprop="description">Parking</h2>
           <p>
             We offer ample parking space for your convenience. When you visit
             us, you can be assured of a hassle-free parking experience.
@@ -129,21 +194,21 @@
       </section>
       <section>
         <div class="container">
-          <h2>Contact Us</h2>
+          <h2 itemprop="description">Contact Us</h2>
           <p>
             If you need further assistance finding us or have any questions,
             please don't hesitate to reach out. We're here to help you have a
             smooth and enjoyable visit.
           </p>
           <h3>Phone:</h3>
-          <p>[Your Contact Phone Number]</p>
+          <p itemprop="telephone">[Your Contact Phone Number]</p>
           <h3>Email:</h3>
-          <p>[Your Contact Email Address]</p>
+          <p itemprop="email">[Your Contact Email Address]</p>
         </div>
       </section>
       <section>
         <div class="container">
-          <h2>Hours of Operation</h2>
+          <h2 itemprop="description">Hours of Operation</h2>
           <p>
             <b>Monday - Thursday:</b> 11:00 AM - 10:00 PM<br />
             <b>Friday - Saturday:</b> 11:00 AM - 11:00 PM<br />
@@ -153,7 +218,7 @@
       </section>
       <section>
         <div class="container">
-          <h2>Join Us Today</h2>
+          <h2 itemprop="description">Join Us Today</h2>
           <p>
             We invite you to visit Thai Chin and embark on a culinary journey of
             authentic Chinese cuisine in Karachi. We look forward to welcoming
@@ -163,7 +228,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer itemscope itemtype="http://schema.org/Restaurant">
       <div class="container">
         <div>
           <a href="./"
@@ -172,40 +237,52 @@
               alt="Thai Chin - Thai Chinese Restaurant"
               class="logo"
             />
-            <p>Thai Chin Restaurant, Karachi</p>
+            <p itemprop="name">Thai Chin Restaurant, Karachi</p>
           </a>
         </div>
         <div>
-          <p style="font-size: 12px; line-height: 22px">
-            Thai Chin Karachi, a new Chinese restaurant in Gulzar E Hijri Scheme
-            33, offers a wide variety of authentic dishes to take out or enjoy
-            in-house. Whether you're a fan of classic Chinese dishes like fried
-            rice and noodles, or you're looking for something more adventurous,
-            Thai Chin Karachi has something for everyone.
+          <p style="font-size: 12px; line-height: 22px" itemprop="description">
+            Discover the flavors of Thai Chin Karachi, a leading Chinese
+            restaurant in Gulzar E Hijri Scheme 33. We offer a diverse selection
+            of authentic dishes for dine-in or takeout. Whether you crave
+            traditional Chinese favorites like fried rice and noodles or seek
+            adventurous culinary experiences, Thai Chin Karachi caters to all
+            tastes.
           </p>
         </div>
-        <div>
-          <a href=""
+        <div
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          <a href="https://goo.gl/maps/qGAA5FSNPWPypkVV9"
             ><p>
               Shop# B-59 Ground Floor,<br />
               Arif Arcade, Sector No: 38-A,<br />
-              KDA Scheme 33 Karachi
+              <span itemprop="addressLocality">Karachi</span>,
+              <span itemprop="addressRegion">Sindh</span>
             </p></a
           >
-          <a href="tel:+923041363224">0304 1363224</a>
+          <a href="tel:+923041363224" itemprop="telephone"
+            >Call Us: 0304 1363224</a
+          >
         </div>
         <div>
-          <button class="primary-button">
-            <span
-              data-glf-cuid="48daaf2c-04f8-48ba-9a60-48e638560b45"
-              data-glf-ruid="a0f60af0-961c-4dc6-869a-6e562df52876"
-              >See MENU & Order</span
-            >
-          </button>
+          <a href="menu.html">
+            <button class="primary-button">
+              <span>Explore Our Menu</span>
+            </button>
+          </a>
           <div class="social-icon">
-            <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
-            <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="https://www.facebook.com/thaichinone"
+              ><i class="fa-brands fa-facebook fa-xl"></i
+            ></a>
+            <a href="https://www.instagram.com/thaichinone"
+              ><i class="fa-brands fa-instagram fa-xl"></i
+            ></a>
+            <a href="https://api.whatsapp.com/send?phone=%2B923041363224"
+              ><i class="fa-brands fa-whatsapp fa-xl"></i
+            ></a>
           </div>
         </div>
       </div>
