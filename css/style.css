@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  --background-color: #083040;
+  --color: #4f5902;
+  --text-color: #f2d8ce;
+  --acent-color: #f2c12e;
+
+  color: var(--text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 60ch;
+}
+
+a {
+  color: var(--acent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-button {
+  color: var(--background-color);
+
+  font-size: 18px;
+  font-weight: 900;
+
+  border-radius: 5px;
+  border: none;
+
+  box-shadow: 2px 2px 2px black;
+
+  border: 2px solid var(--acent-color);
+  background-color: var(--acent-color);
+  padding: 12px 24px;
+}
+
+.primary-button:hover {
+  background-color: var(--text-color);
+}
+
+.secondary-button {
+  color: var(--acent-color);
+
+  font-size: 18px;
+  font-weight: 900;
+
+  border-radius: 5px;
+  border: none;
+
+  box-shadow: 2px 2px 2px black;
+
+  border: 2px solid var(--acent-color);
+  background-color: var(--background-color);
+  padding: 12px 24px;
+}
+
+.secondary-button:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+
+  background-image: url(../images/chinese-building-background.png);
+  background-blend-mode: saturation;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--background-color);
+
+  z-index: -1;
+}
+
+header .logo {
+  width: 80px;
+  height: auto;
+}
+
+footer .logo {
+  width: 140px;
+  height: auto;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+
+  margin: auto;
+}
+
+header .container,
+main .container,
+footer .container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 9px 18px;
+}
+
+header {
+  position: sticky;
+  min-height: 50px;
+
+  background-color: var(--background-color);
+
+  box-shadow: 0px 0px 18px black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .primary-navigation {
+  display: none;
+}
+
+header .container .primary-navigation ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+footer {
+  background-color: var(--background-color);
+}
+
+footer .container {
+  display: grid;
+  gap: 18px;
+}
+
+footer .container div {
+  margin: 0 auto;
+}
+
+footer .container .secondary-navigation ul {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  gap: 10px;
+  list-style: none;
+}
+
+footer .container .social-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 18px;
+}
+
+.hero .container {
+  text-align: center;
+}
+
+@media (min-width: 786px) {
+  .hamburger-icon {
+    display: none;
+  }
+
+  header .container .primary-navigation {
+    display: block;
+
+    position: relative;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer .container div {
+    margin: 18px auto;
+  }
+}
+
+@media (min-width: 1140px) {
+}

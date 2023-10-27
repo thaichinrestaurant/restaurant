@@ -1,0 +1,20 @@
+section ul {
+  line-height: 32px;
+}
+
+@media (min-width: 786px) {
+  section {
+    padding: 0;
+  }
+
+  .main .container img {
+    position: fixed;
+    width: 28vw;
+    height: auto;
+
+    z-index: -1;
+
+    bottom: 20px;
+    right: 12vw;
+  }
+}

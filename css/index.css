@@ -1,0 +1,26 @@
+.hero img {
+  max-width: 550px;
+  height: auto;
+}
+
+.hero .container {
+  text-align: start;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.hero h2 {
+  font-size: 32px;
+}
+
+@media (min-width: 786px) {
+  .hero .container {
+    display: flex;
+  }
+
+  .hero .container div {
+    margin-top: 40px;
+  }
+}
