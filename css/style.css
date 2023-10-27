@@ -56,6 +56,10 @@ a:hover {
   font-size: 40px;
 }
 
+.navbar i {
+  font-size: 40px;
+}
+
 .cta {
   display: flex;
   gap: 10px;
