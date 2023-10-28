@@ -73,7 +73,7 @@ a:hover {
 .primary-button {
   color: var(--background-color);
 
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 900;
 
   border-radius: 5px;
@@ -83,7 +83,7 @@ a:hover {
 
   border: 2px solid var(--acent-color);
   background-color: var(--acent-color);
-  padding: 12px 24px;
+  padding: 8px 12px;
 }
 
 .primary-button:hover {
@@ -214,6 +214,14 @@ footer .container .social-icon {
 }
 
 @media (min-width: 786px) {
+  .primary-button {
+    font-size: 18px;
+  }
+
+  #navbar .whatsapp {
+    font-size: 60px !important;
+  }
+
   .hamburger-icon {
     display: none;
   }
