@@ -213,6 +213,11 @@ footer .container .social-icon {
   text-align: center;
 }
 
+.fb-wrapper {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 @media (min-width: 786px) {
   .primary-button {
     font-size: 18px;
