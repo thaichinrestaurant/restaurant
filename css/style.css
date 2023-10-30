@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 html {
@@ -22,6 +22,7 @@ body {
 
   color: var(--text-color);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--background-color);
 }
 
 img {
