@@ -5,7 +5,6 @@
 html {
   margin: 0;
   padding: 0;
-  touch-action: manipulation;
 }
 
 body {
@@ -65,6 +64,10 @@ a:hover {
 
 #navbar .whatsapp {
   font-size: 40px !important;
+}
+
+#navbar .whatsapp p{
+  display: none;
 }
 
 .cta {
