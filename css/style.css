@@ -210,6 +210,10 @@ footer .container .social-icon {
   padding: 18px;
 }
 
+footer .container .social-icon p{
+  visibility: hidden;
+}
+
 .hero .container {
   text-align: center;
 }
