@@ -176,10 +176,15 @@ header .container {
 
 header .container .primary-navigation {
   display: none;
+
+  position: absolute;
+  top: 150px;
+  right: 20px;
 }
 
 header .container .primary-navigation ul {
   display: flex;
+  flex-direction: column;
   gap: 18px;
   list-style: none;
 }
@@ -245,6 +250,10 @@ footer .container .social-icon p{
 
     position: relative;
   }
+
+  header .container .primary-navigation ul {
+  flex-direction: row;
+}
 
   footer .container {
     grid-template-columns: repeat(4, 1fr);
